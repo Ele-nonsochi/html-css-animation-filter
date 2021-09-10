@@ -106,7 +106,7 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
-    transition: scale 1s, filter 2s ease-in-out;
+    transition: 1s, filter 2s ease-in-out;
 }
 
 .ex-9-img:hover{
@@ -133,8 +133,24 @@
 /*Esercizio 11*/
 .ex-11-icon {
     font-size: 60px;
+    animation-name: clock;
 }
 
+.ex-11-icon:hover{
+    animation: clock 1s;
+}
+
+@keyframes clock {
+        0% {
+            transform: rotate(0);
+        }
+        90% {
+            transform: rotate(315deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
 
 .ex-12-button, .ex-13-button {
     position: relative;
